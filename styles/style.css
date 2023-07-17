@@ -182,8 +182,14 @@ nav ul li a {
 .fetaures{
     margin: 0px 45px;
 }
+.feature-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px 45px;
+}
 .fetaures-image{
-    width: 80%;
+    width: 100%;
 }
 .square {
     border-radius: 5px;
@@ -246,38 +252,10 @@ footer{
 
 
 @media screen  and (max-width: 576px ){
-    
-    .nav-bar {
+    .nav-bar, .nav-menu ul, .header-container, .sponsor-image, .feature-container, .square {
         flex-direction: column;
-    }  
-    .header-container{
-        flex-direction: column;
-        background-image:none;
     }
-
-    .popular-collection-content {
-        display: grid;
+    .popular-collection-content{
         grid-template-columns: repeat(1, 1fr);
-        gap: 30px;
-        
-    }
-
-    .sponsor-image {
-       flex-direction: column;
-       gap: 20px;
-    }
-    body{
-        margin: 0px;
-    }
-    .nav-menu ul{
-        flex-direction: column;
-    }
-    .header-image img{
-        padding: 0px;
-    }
-    .fetaures-image{
-        width: 100%;
-        padding: 0px;
-        
     }
 }
